@@ -1,0 +1,35 @@
+{"level":30,"time":"2025-08-06T13:50:50.197Z","pid":8264,"hostname":"Computer","msg":"Listening on 127.0.0.1:61041"}
+(node:8264) DeprecationWarning: Calling start() is no longer necessary. It can be safely omitted.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+================= Original suppressed error =================
+Error: Browser has been closed.
+    at PlaywrightState.getActiveBrowser (C:\Users\Msi\AppData\Roaming\Python\Python312\site-packages\Browser\wrapper\index.js:12227:15)
+    at PlaywrightServer.getActiveBrowser (C:\Users\Msi\AppData\Roaming\Python\Python312\site-packages\Browser\wrapper\index.js:13124:59)
+    at PlaywrightServer.setTimeout (C:\Users\Msi\AppData\Roaming\Python\Python312\site-packages\Browser\wrapper\index.js:13372:57)
+    at Object.onReceiveHalfClose (C:\Users\Msi\AppData\Roaming\Python\Python312\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1461:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\Users\Msi\AppData\Roaming\Python\Python312\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:575:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\Users\Msi\AppData\Roaming\Python\Python312\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:615:14)
+    at ServerHttp2Stream.<anonymous> (C:\Users\Msi\AppData\Roaming\Python\Python312\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:382:18)
+    at ServerHttp2Stream.emit (node:events:531:35)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+=============================================================
+{"level":30,"time":"2025-08-06T13:50:50.287Z","pid":8264,"hostname":"Computer","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-08-06T13:50:50.288Z","pid":8264,"hostname":"Computer","msg":"End of node method getBrowserCatalog"}
+================= Original suppressed error =================
+Error: Browser has been closed.
+    at PlaywrightState.getActiveBrowser (C:\Users\Msi\AppData\Roaming\Python\Python312\site-packages\Browser\wrapper\index.js:12227:15)
+    at PlaywrightServer.getActiveBrowser (C:\Users\Msi\AppData\Roaming\Python\Python312\site-packages\Browser\wrapper\index.js:13124:59)
+    at PlaywrightServer.setTimeout (C:\Users\Msi\AppData\Roaming\Python\Python312\site-packages\Browser\wrapper\index.js:13372:57)
+    at Object.onReceiveHalfClose (C:\Users\Msi\AppData\Roaming\Python\Python312\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1461:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\Users\Msi\AppData\Roaming\Python\Python312\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:575:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\Users\Msi\AppData\Roaming\Python\Python312\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:615:14)
+    at ServerHttp2Stream.<anonymous> (C:\Users\Msi\AppData\Roaming\Python\Python312\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:382:18)
+    at ServerHttp2Stream.emit (node:events:531:35)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+=============================================================
+{"level":30,"time":"2025-08-06T13:50:50.301Z","pid":8264,"hostname":"Computer","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-08-06T13:50:50.301Z","pid":8264,"hostname":"Computer","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-08-06T13:50:52.390Z","pid":8264,"hostname":"Computer","msg":"Start of node method closeAllBrowsers"}
+{"level":30,"time":"2025-08-06T13:50:52.390Z","pid":8264,"hostname":"Computer","msg":"End of node method closeAllBrowsers"}

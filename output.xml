@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3.2 (Python 3.12.6 on win32)" generated="2025-08-07T01:44:16.894078" rpa="false" schemaversion="5">
+<suite id="s1" name="Collabim" source="c:\Users\Msi\Documents\FullStack\Roboscript_2\collabim.robot">
+<test id="s1-t1" name="Open Collabim site homepage" line="14">
+<kw name="New Browser" owner="Browser">
+<msg time="2025-08-07T01:44:17.034541" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "C:\\Users\\Msi\\Documents\\FullStack\\Roboscript_2\\browser\\traces\\temp\\30d84739-c6b9-48bb-b351-a075c68a34f5"}</msg>
+<msg time="2025-08-07T01:44:17.054695" level="INFO">Starting Browser process C:\Users\Msi\AppData\Roaming\Python\Python312\site-packages\Browser\wrapper\index.js using at 127.0.0.1:52814</msg>
+<msg time="2025-08-07T01:44:17.900085" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"C:\\Users\\Msi\\Documents\\FullStack\\Roboscript_2\\browser\\traces\\temp\\30d84739-c6b9-48bb-b351-a075c68a34f5"}</msg>
+<arg>chromium</arg>
+<arg>headless=false</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2025-08-07T01:44:17.033535" elapsed="0.867056"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<msg time="2025-08-07T01:44:22.088929" level="INFO">Successfully initialized new page object and opened url: https://www.collabim.cz/</msg>
+<msg time="2025-08-07T01:44:22.088929" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<arg>https://www.collabim.cz/</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2025-08-07T01:44:17.900591" elapsed="4.188338"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-08-07T01:44:22.115426" level="INFO">Waited for Element with selector //header//a[contains(@class, 'btn --secondary') and contains(@href, 'localeCode=cs_CZ')] at state visible</msg>
+<arg>//header//a[contains(@class, 'btn --secondary') and contains(@href, 'localeCode=cs_CZ')]</arg>
+<arg>visible</arg>
+<arg>10s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-08-07T01:44:22.089924" elapsed="0.025502"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-08-07T01:44:22.116444" level="INFO">Clicks the element '//header//a[contains(@class, 'btn --secondary') and contains(@href, 'localeCode=cs_CZ')]'.</msg>
+<arg>//header//a[contains(@class, 'btn --secondary') and contains(@href, 'localeCode=cs_CZ')]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-08-07T01:44:22.116444" elapsed="0.983935"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-08-07T01:44:24.451190" level="INFO">Waited for Element with selector id=frm-registrationForm-signature at state visible</msg>
+<arg>id=frm-registrationForm-signature</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-08-07T01:44:23.102378" elapsed="1.349811"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-08-07T01:44:24.453187" level="INFO">Clicks the element 'id=frm-registrationForm-signature'.</msg>
+<arg>id=frm-registrationForm-signature</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-08-07T01:44:24.452189" elapsed="0.049023"/>
+</kw>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2025-08-07T01:44:24.502538" level="INFO">${fill_fullname} = False</msg>
+<var>${fill_fullname}</var>
+<arg>random.choice([True, False])</arg>
+<arg>random</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2025-08-07T01:44:24.501212" elapsed="0.001326"/>
+</kw>
+<if>
+<branch type="IF" condition="${fill_fullname}">
+<kw name="Evaluate" owner="BuiltIn">
+<var>${type}</var>
+<arg>random.choice(["valid", "numbers", "long"])</arg>
+<arg>random</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="NOT RUN" start="2025-08-07T01:44:24.503552" elapsed="0.000000"/>
+</kw>
+<if>
+<branch type="IF" condition="'${type}' == 'valid'">
+<kw name="Evaluate" owner="BuiltIn">
+<var>${fullname}</var>
+<arg>f"eadd{random.randint(1,999)}@example.com"</arg>
+<arg>random</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="NOT RUN" start="2025-08-07T01:44:24.503552" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2025-08-07T01:44:24.503552" elapsed="0.000000"/>
+</branch>
+<branch type="ELSE IF" condition="'${type}' == 'numbers'">
+<kw name="Evaluate" owner="BuiltIn">
+<var>${fullname}</var>
+<arg>str(random.randint(100000, 999999999))</arg>
+<arg>random</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="NOT RUN" start="2025-08-07T01:44:24.503552" elapsed="0.001006"/>
+</kw>
+<status status="NOT RUN" start="2025-08-07T01:44:24.503552" elapsed="0.001006"/>
+</branch>
+<branch type="ELSE">
+<kw name="Evaluate" owner="BuiltIn">
+<var>${fullname}</var>
+<arg>''.join(random.choices(string.ascii_letters, k=100))</arg>
+<arg>random</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="NOT RUN" start="2025-08-07T01:44:24.504558" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2025-08-07T01:44:24.504558" elapsed="0.000000"/>
+</branch>
+<status status="NOT RUN" start="2025-08-07T01:44:24.503552" elapsed="0.001006"/>
+</if>
+<kw name="Fill Text" owner="Browser">
+<arg>${fullname_field}</arg>
+<arg>${fullname}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="NOT RUN" start="2025-08-07T01:44:24.504558" elapsed="0.000000"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>Filled fullname with: ${fullname}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2025-08-07T01:44:24.505550" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2025-08-07T01:44:24.502538" elapsed="0.003012"/>
+</branch>
+<branch type="ELSE">
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-08-07T01:44:24.505550" level="INFO">Skipping fullname field this time</msg>
+<arg>Skipping fullname field this time</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-08-07T01:44:24.505550" elapsed="0.001036"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-08-07T01:44:29.506881" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-08-07T01:44:24.506586" elapsed="5.000295"/>
+</kw>
+<status status="PASS" start="2025-08-07T01:44:24.505550" elapsed="5.001331"/>
+</branch>
+<status status="PASS" start="2025-08-07T01:44:24.502538" elapsed="5.004846"/>
+</if>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-08-07T01:44:29.514561" level="INFO">Waited for Element with selector id=frm-registrationForm-email at state visible</msg>
+<arg>id=frm-registrationForm-email</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-08-07T01:44:29.507384" elapsed="0.007177"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-08-07T01:44:29.516817" level="INFO">Clicks the element 'id=frm-registrationForm-email'.</msg>
+<arg>id=frm-registrationForm-email</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-08-07T01:44:29.515560" elapsed="0.021294"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-08-07T01:44:29.541838" level="INFO">Waited for Element with selector id=frm-registrationForm-password at state visible</msg>
+<arg>id=frm-registrationForm-password</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-08-07T01:44:29.536854" elapsed="0.005984"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-08-07T01:44:29.543941" level="INFO">Clicks the element 'id=frm-registrationForm-password'.</msg>
+<arg>id=frm-registrationForm-password</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-08-07T01:44:29.542838" elapsed="0.039078"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-08-07T01:44:29.586415" level="INFO">Waited for Element with selector id=frm-registrationForm-passwordCheck at state visible</msg>
+<arg>id=frm-registrationForm-passwordCheck</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-08-07T01:44:29.581916" elapsed="0.004499"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-08-07T01:44:29.587402" level="INFO">Clicks the element 'id=frm-registrationForm-passwordCheck'.</msg>
+<arg>id=frm-registrationForm-passwordCheck</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-08-07T01:44:29.586415" elapsed="0.045772"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-08-07T01:44:29.636713" level="INFO">Waited for Element with selector id=frm-registrationForm-phone at state visible</msg>
+<arg>id=frm-registrationForm-phone</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-08-07T01:44:29.632187" elapsed="0.004526"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-08-07T01:44:29.637713" level="INFO">Clicks the element 'id=frm-registrationForm-phone'.</msg>
+<arg>id=frm-registrationForm-phone</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-08-07T01:44:29.637713" elapsed="0.043428"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-08-07T01:44:29.685786" level="INFO">Waited for Element with selector id=frm-registrationForm-approvedTerms at state visible</msg>
+<arg>id=frm-registrationForm-approvedTerms</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-08-07T01:44:29.682355" elapsed="0.004438"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-08-07T01:44:29.686793" level="INFO">Clicks the element 'id=frm-registrationForm-approvedTerms'.</msg>
+<arg>id=frm-registrationForm-approvedTerms</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-08-07T01:44:29.686793" elapsed="0.047533"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-08-07T01:44:29.738863" level="INFO">Waited for Element with selector id=frm-registrationForm-otherOffers at state visible</msg>
+<arg>id=frm-registrationForm-otherOffers</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-08-07T01:44:29.734326" elapsed="0.004537"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-08-07T01:44:29.739864" level="INFO">Clicks the element 'id=frm-registrationForm-otherOffers'.</msg>
+<arg>id=frm-registrationForm-otherOffers</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-08-07T01:44:29.738863" elapsed="0.060636"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-08-07T01:44:29.807578" level="INFO">Waited for Element with selector id=frm-registrationForm-submit at state visible</msg>
+<arg>id=frm-registrationForm-submit</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-08-07T01:44:29.800513" elapsed="0.007065"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-08-07T01:44:29.808606" level="INFO">Clicks the element 'id=frm-registrationForm-submit'.</msg>
+<arg>id=frm-registrationForm-submit</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-08-07T01:44:29.808606" elapsed="0.564807"/>
+</kw>
+<msg time="2025-08-07T01:44:30.386342" level="INFO">Switching context to context=64cf6e2b-f318-44ea-bcb7-8b6782940d9b in CURRENT</msg>
+<msg time="2025-08-07T01:44:30.390336" level="INFO">Successfully changed active context: context=64cf6e2b-f318-44ea-bcb7-8b6782940d9b</msg>
+<msg time="2025-08-07T01:44:30.441591" level="INFO">Successfully closed Context</msg>
+<status status="PASS" start="2025-08-07T01:44:17.032534" elapsed="13.340879"/>
+</test>
+<status status="PASS" start="2025-08-07T01:44:16.899591" elapsed="13.544204"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Collabim" id="s1" pass="1" fail="0" skip="0">Collabim</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

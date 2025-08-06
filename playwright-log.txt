@@ -1,0 +1,86 @@
+{"level":30,"time":"2025-08-06T17:44:17.512Z","pid":21424,"hostname":"Computer","msg":"Listening on 127.0.0.1:52814"}
+(node:21424) DeprecationWarning: Calling start() is no longer necessary. It can be safely omitted.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+{"level":30,"time":"2025-08-06T17:44:17.734Z","pid":21424,"hostname":"Computer","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2025-08-06T17:44:17.896Z","pid":21424,"hostname":"Computer","msg":"Adding browser to stack: chromium, version: 139.0.7258.5"}
+{"level":30,"time":"2025-08-06T17:44:17.897Z","pid":21424,"hostname":"Computer","msg":"End of node method newBrowser"}
+{"level":30,"time":"2025-08-06T17:44:17.896Z","pid":21424,"hostname":"Computer","msg":"Adding 0 contexts to browser"}
+{"level":30,"time":"2025-08-06T17:44:17.903Z","pid":21424,"hostname":"Computer","msg":"Start of node method newPage"}
+{"level":30,"time":"2025-08-06T17:44:17.904Z","pid":21424,"hostname":"Computer","msg":"currentBrowser: {\"name\":\"chromium\",\"browser\":{\"_type\":\"Browser\",\"_guid\":\"browser@d8c04365eb95c97f369d3b7f4bd6cc98\"},\"headless\":false,\"_contextStack\":[],\"id\":\"browser=1ab4186b-c91f-49ae-99fa-51fb961e8308\"}"}
+{"level":30,"time":"2025-08-06T17:44:17.916Z","pid":21424,"hostname":"Computer","msg":"Setting default timeout for context context=64cf6e2b-f318-44ea-bcb7-8b6782940d9b to 10000"}
+{"level":30,"time":"2025-08-06T17:44:17.916Z","pid":21424,"hostname":"Computer","msg":"Changed active context: context=64cf6e2b-f318-44ea-bcb7-8b6782940d9b"}
+{"level":30,"time":"2025-08-06T17:44:18.045Z","pid":21424,"hostname":"Computer","msg":"Video path: undefined"}
+{"level":30,"time":"2025-08-06T17:44:18.046Z","pid":21424,"hostname":"Computer","msg":"Changed active page"}
+{"level":30,"time":"2025-08-06T17:44:22.087Z","pid":21424,"hostname":"Computer","msg":"End of node method newPage"}
+{"level":30,"time":"2025-08-06T17:44:22.092Z","pid":21424,"hostname":"Computer","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2025-08-06T17:44:22.092Z","pid":21424,"hostname":"Computer","msg":"Strict mode is enabled, find Locator with //header//a[contains(@class, 'btn --secondary') and contains(@href, 'localeCode=cs_CZ')] in page."}
+{"level":30,"time":"2025-08-06T17:44:22.114Z","pid":21424,"hostname":"Computer","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2025-08-06T17:44:22.117Z","pid":21424,"hostname":"Computer","msg":"Start of node method click"}
+{"level":30,"time":"2025-08-06T17:44:22.118Z","pid":21424,"hostname":"Computer","msg":"Strict mode is enabled, find Locator with //header//a[contains(@class, 'btn --secondary') and contains(@href, 'localeCode=cs_CZ')] in page."}
+{"level":30,"time":"2025-08-06T17:44:23.099Z","pid":21424,"hostname":"Computer","msg":"End of node method click"}
+{"level":30,"time":"2025-08-06T17:44:23.104Z","pid":21424,"hostname":"Computer","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2025-08-06T17:44:23.104Z","pid":21424,"hostname":"Computer","msg":"Strict mode is enabled, find Locator with id=frm-registrationForm-signature in page."}
+{"level":30,"time":"2025-08-06T17:44:24.450Z","pid":21424,"hostname":"Computer","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2025-08-06T17:44:24.453Z","pid":21424,"hostname":"Computer","msg":"Start of node method click"}
+{"level":30,"time":"2025-08-06T17:44:24.453Z","pid":21424,"hostname":"Computer","msg":"Strict mode is enabled, find Locator with id=frm-registrationForm-signature in page."}
+{"level":30,"time":"2025-08-06T17:44:24.500Z","pid":21424,"hostname":"Computer","msg":"End of node method click"}
+{"level":30,"time":"2025-08-06T17:44:29.509Z","pid":21424,"hostname":"Computer","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2025-08-06T17:44:29.509Z","pid":21424,"hostname":"Computer","msg":"Strict mode is enabled, find Locator with id=frm-registrationForm-email in page."}
+{"level":30,"time":"2025-08-06T17:44:29.512Z","pid":21424,"hostname":"Computer","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2025-08-06T17:44:29.517Z","pid":21424,"hostname":"Computer","msg":"Start of node method click"}
+{"level":30,"time":"2025-08-06T17:44:29.517Z","pid":21424,"hostname":"Computer","msg":"Strict mode is enabled, find Locator with id=frm-registrationForm-email in page."}
+{"level":30,"time":"2025-08-06T17:44:29.535Z","pid":21424,"hostname":"Computer","msg":"End of node method click"}
+{"level":30,"time":"2025-08-06T17:44:29.538Z","pid":21424,"hostname":"Computer","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2025-08-06T17:44:29.538Z","pid":21424,"hostname":"Computer","msg":"Strict mode is enabled, find Locator with id=frm-registrationForm-password in page."}
+{"level":30,"time":"2025-08-06T17:44:29.541Z","pid":21424,"hostname":"Computer","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2025-08-06T17:44:29.544Z","pid":21424,"hostname":"Computer","msg":"Start of node method click"}
+{"level":30,"time":"2025-08-06T17:44:29.544Z","pid":21424,"hostname":"Computer","msg":"Strict mode is enabled, find Locator with id=frm-registrationForm-password in page."}
+{"level":30,"time":"2025-08-06T17:44:29.580Z","pid":21424,"hostname":"Computer","msg":"End of node method click"}
+{"level":30,"time":"2025-08-06T17:44:29.582Z","pid":21424,"hostname":"Computer","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2025-08-06T17:44:29.583Z","pid":21424,"hostname":"Computer","msg":"Strict mode is enabled, find Locator with id=frm-registrationForm-passwordCheck in page."}
+{"level":30,"time":"2025-08-06T17:44:29.585Z","pid":21424,"hostname":"Computer","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2025-08-06T17:44:29.587Z","pid":21424,"hostname":"Computer","msg":"Start of node method click"}
+{"level":30,"time":"2025-08-06T17:44:29.587Z","pid":21424,"hostname":"Computer","msg":"Strict mode is enabled, find Locator with id=frm-registrationForm-passwordCheck in page."}
+{"level":30,"time":"2025-08-06T17:44:29.630Z","pid":21424,"hostname":"Computer","msg":"End of node method click"}
+{"level":30,"time":"2025-08-06T17:44:29.633Z","pid":21424,"hostname":"Computer","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2025-08-06T17:44:29.633Z","pid":21424,"hostname":"Computer","msg":"Strict mode is enabled, find Locator with id=frm-registrationForm-phone in page."}
+{"level":30,"time":"2025-08-06T17:44:29.635Z","pid":21424,"hostname":"Computer","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2025-08-06T17:44:29.638Z","pid":21424,"hostname":"Computer","msg":"Start of node method click"}
+{"level":30,"time":"2025-08-06T17:44:29.638Z","pid":21424,"hostname":"Computer","msg":"Strict mode is enabled, find Locator with id=frm-registrationForm-phone in page."}
+{"level":30,"time":"2025-08-06T17:44:29.680Z","pid":21424,"hostname":"Computer","msg":"End of node method click"}
+{"level":30,"time":"2025-08-06T17:44:29.683Z","pid":21424,"hostname":"Computer","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2025-08-06T17:44:29.683Z","pid":21424,"hostname":"Computer","msg":"Strict mode is enabled, find Locator with id=frm-registrationForm-approvedTerms in page."}
+{"level":30,"time":"2025-08-06T17:44:29.685Z","pid":21424,"hostname":"Computer","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2025-08-06T17:44:29.687Z","pid":21424,"hostname":"Computer","msg":"Start of node method click"}
+{"level":30,"time":"2025-08-06T17:44:29.687Z","pid":21424,"hostname":"Computer","msg":"Strict mode is enabled, find Locator with id=frm-registrationForm-approvedTerms in page."}
+{"level":30,"time":"2025-08-06T17:44:29.733Z","pid":21424,"hostname":"Computer","msg":"End of node method click"}
+{"level":30,"time":"2025-08-06T17:44:29.735Z","pid":21424,"hostname":"Computer","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2025-08-06T17:44:29.735Z","pid":21424,"hostname":"Computer","msg":"Strict mode is enabled, find Locator with id=frm-registrationForm-otherOffers in page."}
+{"level":30,"time":"2025-08-06T17:44:29.737Z","pid":21424,"hostname":"Computer","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2025-08-06T17:44:29.740Z","pid":21424,"hostname":"Computer","msg":"Start of node method click"}
+{"level":30,"time":"2025-08-06T17:44:29.740Z","pid":21424,"hostname":"Computer","msg":"Strict mode is enabled, find Locator with id=frm-registrationForm-otherOffers in page."}
+{"level":30,"time":"2025-08-06T17:44:29.798Z","pid":21424,"hostname":"Computer","msg":"End of node method click"}
+{"level":30,"time":"2025-08-06T17:44:29.802Z","pid":21424,"hostname":"Computer","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2025-08-06T17:44:29.802Z","pid":21424,"hostname":"Computer","msg":"Strict mode is enabled, find Locator with id=frm-registrationForm-submit in page."}
+{"level":30,"time":"2025-08-06T17:44:29.806Z","pid":21424,"hostname":"Computer","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2025-08-06T17:44:29.810Z","pid":21424,"hostname":"Computer","msg":"Start of node method click"}
+{"level":30,"time":"2025-08-06T17:44:29.810Z","pid":21424,"hostname":"Computer","msg":"Strict mode is enabled, find Locator with id=frm-registrationForm-submit in page."}
+{"level":30,"time":"2025-08-06T17:44:30.372Z","pid":21424,"hostname":"Computer","msg":"End of node method click"}
+{"level":30,"time":"2025-08-06T17:44:30.377Z","pid":21424,"hostname":"Computer","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-08-06T17:44:30.380Z","pid":21424,"hostname":"Computer","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-08-06T17:44:30.381Z","pid":21424,"hostname":"Computer","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-08-06T17:44:30.382Z","pid":21424,"hostname":"Computer","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-08-06T17:44:30.383Z","pid":21424,"hostname":"Computer","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-08-06T17:44:30.384Z","pid":21424,"hostname":"Computer","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-08-06T17:44:30.386Z","pid":21424,"hostname":"Computer","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-08-06T17:44:30.387Z","pid":21424,"hostname":"Computer","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-08-06T17:44:30.388Z","pid":21424,"hostname":"Computer","msg":"Changed active context: context=64cf6e2b-f318-44ea-bcb7-8b6782940d9b"}
+{"level":30,"time":"2025-08-06T17:44:30.388Z","pid":21424,"hostname":"Computer","msg":"Changing current active page: page=48587ab5-a2dc-493f-8de0-a9eda74a673b"}
+{"level":30,"time":"2025-08-06T17:44:30.388Z","pid":21424,"hostname":"Computer","msg":"Changed active page"}
+{"level":30,"time":"2025-08-06T17:44:30.391Z","pid":21424,"hostname":"Computer","msg":"Start of node method closeContext"}
+{"level":30,"time":"2025-08-06T17:44:30.412Z","pid":21424,"hostname":"Computer","msg":"Removed page=f08b157c-641e-4fdf-bcdd-7e01238f1c74 from context=64cf6e2b-f318-44ea-bcb7-8b6782940d9b page stack"}
+{"level":30,"time":"2025-08-06T17:44:30.440Z","pid":21424,"hostname":"Computer","msg":"End of node method closeContext"}
+{"level":30,"time":"2025-08-06T17:44:30.448Z","pid":21424,"hostname":"Computer","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-08-06T17:44:30.448Z","pid":21424,"hostname":"Computer","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-08-06T17:44:32.488Z","pid":21424,"hostname":"Computer","msg":"Start of node method closeAllBrowsers"}
+{"level":30,"time":"2025-08-06T17:44:32.592Z","pid":21424,"hostname":"Computer","msg":"End of node method closeAllBrowsers"}
