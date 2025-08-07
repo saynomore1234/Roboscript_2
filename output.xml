@@ -1,98 +1,88 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.3.2 (Python 3.12.6 on win32)" generated="2025-08-07T01:44:16.894078" rpa="false" schemaversion="5">
-<suite id="s1" name="Collabim" source="c:\Users\Msi\Documents\FullStack\Roboscript_2\collabim.robot">
+<robot generator="Robot 7.3.2 (Python 3.13.1 on win32)" generated="2025-08-08T00:22:49.113559" rpa="false" schemaversion="5">
+<suite id="s1" name="Collabim" source="C:\Users\IT admin\OneDrive - The Conference Board\Documents\Inzio_Roboscript_2\Roboscript_2\collabim.robot">
 <test id="s1-t1" name="Open Collabim site homepage" line="14">
 <kw name="New Browser" owner="Browser">
-<msg time="2025-08-07T01:44:17.034541" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "C:\\Users\\Msi\\Documents\\FullStack\\Roboscript_2\\browser\\traces\\temp\\30d84739-c6b9-48bb-b351-a075c68a34f5"}</msg>
-<msg time="2025-08-07T01:44:17.054695" level="INFO">Starting Browser process C:\Users\Msi\AppData\Roaming\Python\Python312\site-packages\Browser\wrapper\index.js using at 127.0.0.1:52814</msg>
-<msg time="2025-08-07T01:44:17.900085" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"C:\\Users\\Msi\\Documents\\FullStack\\Roboscript_2\\browser\\traces\\temp\\30d84739-c6b9-48bb-b351-a075c68a34f5"}</msg>
+<msg time="2025-08-08T00:22:49.457668" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "C:\\Users\\IT admin\\OneDrive - The Conference Board\\Documents\\Inzio_Roboscript_2\\Roboscript_2\\browser\\traces\\temp\\324c5c72-f3f3-4b6e-ad1b-bb6ee95ff985"}</msg>
+<msg time="2025-08-08T00:22:49.506697" level="INFO">Starting Browser process C:\Users\IT admin\AppData\Roaming\Python\Python313\site-packages\Browser\wrapper\index.js using at 127.0.0.1:57588</msg>
+<msg time="2025-08-08T00:22:51.118312" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"C:\\Users\\IT admin\\OneDrive - The Conference Board\\Documents\\Inzio_Roboscript_2\\Roboscript_2\\browser\\traces\\temp\\324c5c72-f3f3-4b6e-ad1b-bb6ee95ff985"}</msg>
 <arg>chromium</arg>
 <arg>headless=false</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Create a new playwright Browser with specified options.</doc>
-<status status="PASS" start="2025-08-07T01:44:17.033535" elapsed="0.867056"/>
+<status status="PASS" start="2025-08-08T00:22:49.456794" elapsed="1.661939"/>
 </kw>
 <kw name="New Page" owner="Browser">
-<msg time="2025-08-07T01:44:22.088929" level="INFO">Successfully initialized new page object and opened url: https://www.collabim.cz/</msg>
-<msg time="2025-08-07T01:44:22.088929" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<msg time="2025-08-08T00:22:54.891792" level="INFO">Successfully initialized new page object and opened url: https://www.collabim.cz/</msg>
+<msg time="2025-08-08T00:22:54.891931" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
 <arg>https://www.collabim.cz/</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Open a new Page.</doc>
-<status status="PASS" start="2025-08-07T01:44:17.900591" elapsed="4.188338"/>
+<status status="PASS" start="2025-08-08T00:22:51.124401" elapsed="3.767799"/>
 </kw>
 <kw name="Wait For Elements State" owner="Browser">
-<msg time="2025-08-07T01:44:22.115426" level="INFO">Waited for Element with selector //header//a[contains(@class, 'btn --secondary') and contains(@href, 'localeCode=cs_CZ')] at state visible</msg>
+<msg time="2025-08-08T00:22:54.965998" level="INFO">Waited for Element with selector //header//a[contains(@class, 'btn --secondary') and contains(@href, 'localeCode=cs_CZ')] at state visible</msg>
 <arg>//header//a[contains(@class, 'btn --secondary') and contains(@href, 'localeCode=cs_CZ')]</arg>
 <arg>visible</arg>
 <arg>10s</arg>
 <tag>PageContent</tag>
 <tag>Wait</tag>
 <doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<status status="PASS" start="2025-08-07T01:44:22.089924" elapsed="0.025502"/>
+<status status="PASS" start="2025-08-08T00:22:54.892755" elapsed="0.073437"/>
 </kw>
 <kw name="Click" owner="Browser">
-<msg time="2025-08-07T01:44:22.116444" level="INFO">Clicks the element '//header//a[contains(@class, 'btn --secondary') and contains(@href, 'localeCode=cs_CZ')]'.</msg>
+<msg time="2025-08-08T00:22:54.967842" level="INFO">Clicks the element '//header//a[contains(@class, 'btn --secondary') and contains(@href, 'localeCode=cs_CZ')]'.</msg>
 <arg>//header//a[contains(@class, 'btn --secondary') and contains(@href, 'localeCode=cs_CZ')]</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" start="2025-08-07T01:44:22.116444" elapsed="0.983935"/>
+<status status="PASS" start="2025-08-08T00:22:54.966693" elapsed="1.472989"/>
 </kw>
 <kw name="Wait For Elements State" owner="Browser">
-<msg time="2025-08-07T01:44:24.451190" level="INFO">Waited for Element with selector id=frm-registrationForm-signature at state visible</msg>
+<msg time="2025-08-08T00:22:57.827639" level="INFO">Waited for Element with selector id=frm-registrationForm-signature at state visible</msg>
 <arg>id=frm-registrationForm-signature</arg>
 <tag>PageContent</tag>
 <tag>Wait</tag>
 <doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<status status="PASS" start="2025-08-07T01:44:23.102378" elapsed="1.349811"/>
+<status status="PASS" start="2025-08-08T00:22:56.440270" elapsed="1.387595"/>
 </kw>
 <kw name="Click" owner="Browser">
-<msg time="2025-08-07T01:44:24.453187" level="INFO">Clicks the element 'id=frm-registrationForm-signature'.</msg>
+<msg time="2025-08-08T00:22:57.829227" level="INFO">Clicks the element 'id=frm-registrationForm-signature'.</msg>
 <arg>id=frm-registrationForm-signature</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" start="2025-08-07T01:44:24.452189" elapsed="0.049023"/>
+<status status="PASS" start="2025-08-08T00:22:57.828349" elapsed="0.033104"/>
 </kw>
 <kw name="Evaluate" owner="BuiltIn">
-<msg time="2025-08-07T01:44:24.502538" level="INFO">${fill_fullname} = False</msg>
+<msg time="2025-08-08T00:22:57.863282" level="INFO">${fill_fullname} = False</msg>
 <var>${fill_fullname}</var>
 <arg>random.choice([True, False])</arg>
 <arg>random</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2025-08-07T01:44:24.501212" elapsed="0.001326"/>
+<status status="PASS" start="2025-08-08T00:22:57.862355" elapsed="0.001000"/>
 </kw>
 <if>
 <branch type="IF" condition="${fill_fullname}">
 <kw name="Evaluate" owner="BuiltIn">
 <var>${type}</var>
-<arg>random.choice(["valid", "numbers", "long"])</arg>
+<arg>random.choice(["numbers", "long"])</arg>
 <arg>random</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="NOT RUN" start="2025-08-07T01:44:24.503552" elapsed="0.000000"/>
+<status status="NOT RUN" start="2025-08-08T00:22:57.864370" elapsed="0.000184"/>
 </kw>
 <if>
-<branch type="IF" condition="'${type}' == 'valid'">
-<kw name="Evaluate" owner="BuiltIn">
-<var>${fullname}</var>
-<arg>f"eadd{random.randint(1,999)}@example.com"</arg>
-<arg>random</arg>
-<doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="NOT RUN" start="2025-08-07T01:44:24.503552" elapsed="0.000000"/>
-</kw>
-<status status="NOT RUN" start="2025-08-07T01:44:24.503552" elapsed="0.000000"/>
-</branch>
-<branch type="ELSE IF" condition="'${type}' == 'numbers'">
+<branch type="IF" condition="'${type}' == 'numbers'">
 <kw name="Evaluate" owner="BuiltIn">
 <var>${fullname}</var>
 <arg>str(random.randint(100000, 999999999))</arg>
 <arg>random</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="NOT RUN" start="2025-08-07T01:44:24.503552" elapsed="0.001006"/>
+<status status="NOT RUN" start="2025-08-08T00:22:57.865085" elapsed="0.000313"/>
 </kw>
-<status status="NOT RUN" start="2025-08-07T01:44:24.503552" elapsed="0.001006"/>
+<status status="NOT RUN" start="2025-08-08T00:22:57.864723" elapsed="0.000793"/>
 </branch>
 <branch type="ELSE">
 <kw name="Evaluate" owner="BuiltIn">
@@ -100,11 +90,11 @@
 <arg>''.join(random.choices(string.ascii_letters, k=100))</arg>
 <arg>random</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="NOT RUN" start="2025-08-07T01:44:24.504558" elapsed="0.000000"/>
+<status status="NOT RUN" start="2025-08-08T00:22:57.865927" elapsed="0.000129"/>
 </kw>
-<status status="NOT RUN" start="2025-08-07T01:44:24.504558" elapsed="0.000000"/>
+<status status="NOT RUN" start="2025-08-08T00:22:57.865607" elapsed="0.000515"/>
 </branch>
-<status status="NOT RUN" start="2025-08-07T01:44:24.503552" elapsed="0.001006"/>
+<status status="NOT RUN" start="2025-08-08T00:22:57.864694" elapsed="0.001476"/>
 </if>
 <kw name="Fill Text" owner="Browser">
 <arg>${fullname_field}</arg>
@@ -112,150 +102,605 @@
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="NOT RUN" start="2025-08-07T01:44:24.504558" elapsed="0.000000"/>
+<status status="NOT RUN" start="2025-08-08T00:22:57.866285" elapsed="0.000124"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
 <arg>Filled fullname with: ${fullname}</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="NOT RUN" start="2025-08-07T01:44:24.505550" elapsed="0.000000"/>
+<status status="NOT RUN" start="2025-08-08T00:22:57.866538" elapsed="0.000119"/>
 </kw>
-<status status="NOT RUN" start="2025-08-07T01:44:24.502538" elapsed="0.003012"/>
+<status status="NOT RUN" start="2025-08-08T00:22:57.863848" elapsed="0.002865"/>
 </branch>
 <branch type="ELSE">
 <kw name="Log" owner="BuiltIn">
-<msg time="2025-08-07T01:44:24.505550" level="INFO">Skipping fullname field this time</msg>
+<msg time="2025-08-08T00:22:57.867236" level="INFO">Skipping fullname field this time</msg>
 <arg>Skipping fullname field this time</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-08-07T01:44:24.505550" elapsed="0.001036"/>
+<status status="PASS" start="2025-08-08T00:22:57.866966" elapsed="0.000326"/>
 </kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2025-08-07T01:44:29.506881" level="INFO">Slept 5 seconds.</msg>
-<arg>5s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-08-07T01:44:24.506586" elapsed="5.000295"/>
-</kw>
-<status status="PASS" start="2025-08-07T01:44:24.505550" elapsed="5.001331"/>
+<status status="PASS" start="2025-08-08T00:22:57.866759" elapsed="0.000585"/>
 </branch>
-<status status="PASS" start="2025-08-07T01:44:24.502538" elapsed="5.004846"/>
+<status status="PASS" start="2025-08-08T00:22:57.863771" elapsed="0.003637"/>
 </if>
 <kw name="Wait For Elements State" owner="Browser">
-<msg time="2025-08-07T01:44:29.514561" level="INFO">Waited for Element with selector id=frm-registrationForm-email at state visible</msg>
+<msg time="2025-08-08T00:22:57.885582" level="INFO">Waited for Element with selector id=frm-registrationForm-email at state visible</msg>
 <arg>id=frm-registrationForm-email</arg>
 <tag>PageContent</tag>
 <tag>Wait</tag>
 <doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<status status="PASS" start="2025-08-07T01:44:29.507384" elapsed="0.007177"/>
+<status status="PASS" start="2025-08-08T00:22:57.867759" elapsed="0.018172"/>
 </kw>
 <kw name="Click" owner="Browser">
-<msg time="2025-08-07T01:44:29.516817" level="INFO">Clicks the element 'id=frm-registrationForm-email'.</msg>
+<msg time="2025-08-08T00:22:57.888742" level="INFO">Clicks the element 'id=frm-registrationForm-email'.</msg>
 <arg>id=frm-registrationForm-email</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" start="2025-08-07T01:44:29.515560" elapsed="0.021294"/>
+<status status="PASS" start="2025-08-08T00:22:57.887628" elapsed="0.052915"/>
 </kw>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2025-08-08T00:22:57.942316" level="INFO">${fill_email} = True</msg>
+<var>${fill_email}</var>
+<arg>random.choice([True, False])</arg>
+<arg>random</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2025-08-08T00:22:57.941237" elapsed="0.001176"/>
+</kw>
+<if>
+<branch type="IF" condition="${fill_email}">
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2025-08-08T00:22:57.945004" level="INFO">${type} = numbers</msg>
+<var>${type}</var>
+<arg>random.choice(["valid", "numbers", "long"])</arg>
+<arg>random</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2025-08-08T00:22:57.943475" elapsed="0.001705"/>
+</kw>
+<if>
+<branch type="IF" condition="'${type}' == 'valid'">
+<kw name="Evaluate" owner="BuiltIn">
+<var>${email}</var>
+<arg>f"eadd{random.randint(1,999)}@example.com"</arg>
+<arg>random</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="NOT RUN" start="2025-08-08T00:22:57.947251" elapsed="0.000367"/>
+</kw>
+<status status="NOT RUN" start="2025-08-08T00:22:57.946146" elapsed="0.001682"/>
+</branch>
+<branch type="ELSE IF" condition="'${type}' == 'numbers'">
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2025-08-08T00:22:57.950475" level="INFO">${email} = 6453256</msg>
+<var>${email}</var>
+<arg>str(random.randint(100000, 999999999))</arg>
+<arg>random</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2025-08-08T00:22:57.949289" elapsed="0.001271"/>
+</kw>
+<status status="PASS" start="2025-08-08T00:22:57.947963" elapsed="0.002769"/>
+</branch>
+<branch type="ELSE">
+<kw name="Evaluate" owner="BuiltIn">
+<var>${email}</var>
+<arg>''.join(random.choices(string.ascii_letters, k=100))</arg>
+<arg>random</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="NOT RUN" start="2025-08-08T00:22:57.951251" elapsed="0.000185"/>
+</kw>
+<status status="NOT RUN" start="2025-08-08T00:22:57.950846" elapsed="0.000704"/>
+</branch>
+<status status="PASS" start="2025-08-08T00:22:57.945989" elapsed="0.005624"/>
+</if>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-08-08T00:22:57.952493" level="INFO">Fills the text '6453256' in the given field.</msg>
+<arg>${email_field}</arg>
+<arg>${email}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-08-08T00:22:57.951757" elapsed="0.018381"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-08-08T00:22:57.970771" level="INFO">Filled email with: 6453256</msg>
+<arg>Filled email with: ${email}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-08-08T00:22:57.970371" elapsed="0.000483"/>
+</kw>
+<status status="PASS" start="2025-08-08T00:22:57.942999" elapsed="0.027935"/>
+</branch>
+<branch type="ELSE">
+<kw name="Log" owner="BuiltIn">
+<arg>Skipping email field this time</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2025-08-08T00:22:57.971230" elapsed="0.000147"/>
+</kw>
+<status status="NOT RUN" start="2025-08-08T00:22:57.971008" elapsed="0.000430"/>
+</branch>
+<status status="PASS" start="2025-08-08T00:22:57.942943" elapsed="0.028539"/>
+</if>
 <kw name="Wait For Elements State" owner="Browser">
-<msg time="2025-08-07T01:44:29.541838" level="INFO">Waited for Element with selector id=frm-registrationForm-password at state visible</msg>
+<msg time="2025-08-08T00:22:57.988151" level="INFO">Waited for Element with selector id=frm-registrationForm-password at state visible</msg>
 <arg>id=frm-registrationForm-password</arg>
 <tag>PageContent</tag>
 <tag>Wait</tag>
 <doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<status status="PASS" start="2025-08-07T01:44:29.536854" elapsed="0.005984"/>
+<status status="PASS" start="2025-08-08T00:22:57.971752" elapsed="0.016736"/>
 </kw>
 <kw name="Click" owner="Browser">
-<msg time="2025-08-07T01:44:29.543941" level="INFO">Clicks the element 'id=frm-registrationForm-password'.</msg>
+<msg time="2025-08-08T00:22:57.990095" level="INFO">Clicks the element 'id=frm-registrationForm-password'.</msg>
 <arg>id=frm-registrationForm-password</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" start="2025-08-07T01:44:29.542838" elapsed="0.039078"/>
+<status status="PASS" start="2025-08-08T00:22:57.989033" elapsed="0.060601"/>
 </kw>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2025-08-08T00:22:58.051361" level="INFO">${fill_password} = False</msg>
+<var>${fill_password}</var>
+<arg>random.choice([True, False])</arg>
+<arg>random</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2025-08-08T00:22:58.050535" elapsed="0.000887"/>
+</kw>
+<if>
+<branch type="IF" condition="${fill_password}">
+<kw name="Evaluate" owner="BuiltIn">
+<var>${type}</var>
+<arg>random.choice(["numbers", "long"])</arg>
+<arg>random</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="NOT RUN" start="2025-08-08T00:22:58.052352" elapsed="0.000374"/>
+</kw>
+<if>
+<branch type="IF" condition="'${type}' == 'numbers'">
+<kw name="Evaluate" owner="BuiltIn">
+<var>${password}</var>
+<arg>str(random.randint(100000, 999999999))</arg>
+<arg>random</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="NOT RUN" start="2025-08-08T00:22:58.053763" elapsed="0.000431"/>
+</kw>
+<status status="NOT RUN" start="2025-08-08T00:22:58.053075" elapsed="0.001354"/>
+</branch>
+<branch type="ELSE">
+<kw name="Evaluate" owner="BuiltIn">
+<var>${password}</var>
+<arg>''.join(random.choices(string.ascii_letters, k=100))</arg>
+<arg>random</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="NOT RUN" start="2025-08-08T00:22:58.055142" elapsed="0.000244"/>
+</kw>
+<status status="NOT RUN" start="2025-08-08T00:22:58.054600" elapsed="0.000970"/>
+</branch>
+<status status="NOT RUN" start="2025-08-08T00:22:58.053004" elapsed="0.002669"/>
+</if>
+<kw name="Fill Text" owner="Browser">
+<arg>${password_field}</arg>
+<arg>${password}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="NOT RUN" start="2025-08-08T00:22:58.055880" elapsed="0.000230"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>Filled password with: ${password}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2025-08-08T00:22:58.056470" elapsed="0.000355"/>
+</kw>
+<status status="NOT RUN" start="2025-08-08T00:22:58.051858" elapsed="0.005149"/>
+</branch>
+<branch type="ELSE">
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-08-08T00:22:58.058058" level="INFO">Skipping password field this time</msg>
+<arg>Skipping password field this time</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-08-08T00:22:58.057653" elapsed="0.000482"/>
+</kw>
+<status status="PASS" start="2025-08-08T00:22:58.057138" elapsed="0.001072"/>
+</branch>
+<status status="PASS" start="2025-08-08T00:22:58.051814" elapsed="0.006450"/>
+</if>
 <kw name="Wait For Elements State" owner="Browser">
-<msg time="2025-08-07T01:44:29.586415" level="INFO">Waited for Element with selector id=frm-registrationForm-passwordCheck at state visible</msg>
+<msg time="2025-08-08T00:22:58.134577" level="INFO">Waited for Element with selector id=frm-registrationForm-passwordCheck at state visible</msg>
 <arg>id=frm-registrationForm-passwordCheck</arg>
 <tag>PageContent</tag>
 <tag>Wait</tag>
 <doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<status status="PASS" start="2025-08-07T01:44:29.581916" elapsed="0.004499"/>
+<status status="PASS" start="2025-08-08T00:22:58.058548" elapsed="0.076309"/>
 </kw>
 <kw name="Click" owner="Browser">
-<msg time="2025-08-07T01:44:29.587402" level="INFO">Clicks the element 'id=frm-registrationForm-passwordCheck'.</msg>
+<msg time="2025-08-08T00:22:58.138359" level="INFO">Clicks the element 'id=frm-registrationForm-passwordCheck'.</msg>
 <arg>id=frm-registrationForm-passwordCheck</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" start="2025-08-07T01:44:29.586415" elapsed="0.045772"/>
+<status status="PASS" start="2025-08-08T00:22:58.137112" elapsed="0.066317"/>
 </kw>
 <kw name="Wait For Elements State" owner="Browser">
-<msg time="2025-08-07T01:44:29.636713" level="INFO">Waited for Element with selector id=frm-registrationForm-phone at state visible</msg>
+<msg time="2025-08-08T00:22:58.235121" level="INFO">Waited for Element with selector id=frm-registrationForm-passwordCheck at state visible</msg>
+<arg>id=frm-registrationForm-passwordCheck</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-08-08T00:22:58.215938" elapsed="0.019580"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-08-08T00:22:58.238504" level="INFO">Clicks the element 'id=frm-registrationForm-passwordCheck'.</msg>
+<arg>id=frm-registrationForm-passwordCheck</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-08-08T00:22:58.237159" elapsed="0.051700"/>
+</kw>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2025-08-08T00:22:58.290097" level="INFO">${fill_password_again} = True</msg>
+<var>${fill_password_again}</var>
+<arg>random.choice([True, False])</arg>
+<arg>random</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2025-08-08T00:22:58.289347" elapsed="0.000820"/>
+</kw>
+<if>
+<branch type="IF" condition="${fill_password_again} and '${fill_password}' == 'True'">
+<kw name="Set Variable" owner="BuiltIn">
+<var>${password_again}</var>
+<arg>${password}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" start="2025-08-08T00:22:58.291094" elapsed="0.000189"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<arg>${password_again_field}</arg>
+<arg>${password_again}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="NOT RUN" start="2025-08-08T00:22:58.291456" elapsed="0.000156"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>Copied password to confirm password: ${password_again}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2025-08-08T00:22:58.291772" elapsed="0.000138"/>
+</kw>
+<status status="NOT RUN" start="2025-08-08T00:22:58.290529" elapsed="0.001447"/>
+</branch>
+<branch type="ELSE">
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-08-08T00:22:58.292547" level="INFO">Skipped confirm password field or password was not filled</msg>
+<arg>Skipped confirm password field or password was not filled</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-08-08T00:22:58.292277" elapsed="0.000336"/>
+</kw>
+<status status="PASS" start="2025-08-08T00:22:58.292037" elapsed="0.000640"/>
+</branch>
+<status status="PASS" start="2025-08-08T00:22:58.290473" elapsed="0.002268"/>
+</if>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-08-08T00:22:58.306584" level="INFO">Waited for Element with selector id=frm-registrationForm-phone at state visible</msg>
 <arg>id=frm-registrationForm-phone</arg>
 <tag>PageContent</tag>
 <tag>Wait</tag>
 <doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<status status="PASS" start="2025-08-07T01:44:29.632187" elapsed="0.004526"/>
+<status status="PASS" start="2025-08-08T00:22:58.293129" elapsed="0.013851"/>
 </kw>
 <kw name="Click" owner="Browser">
-<msg time="2025-08-07T01:44:29.637713" level="INFO">Clicks the element 'id=frm-registrationForm-phone'.</msg>
+<msg time="2025-08-08T00:22:58.308555" level="INFO">Clicks the element 'id=frm-registrationForm-phone'.</msg>
 <arg>id=frm-registrationForm-phone</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" start="2025-08-07T01:44:29.637713" elapsed="0.043428"/>
+<status status="PASS" start="2025-08-08T00:22:58.307582" elapsed="0.052415"/>
 </kw>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2025-08-08T00:22:58.369138" level="INFO">${fill_phone} = False</msg>
+<var>${fill_phone}</var>
+<arg>random.choice([True, False])</arg>
+<arg>random</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2025-08-08T00:22:58.367955" elapsed="0.001324"/>
+</kw>
+<if>
+<branch type="IF" condition="${fill_phone}">
+<kw name="Evaluate" owner="BuiltIn">
+<var>${type}</var>
+<arg>random.choice(["numbers", "long"])</arg>
+<arg>random</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="NOT RUN" start="2025-08-08T00:22:58.371930" elapsed="0.000560"/>
+</kw>
+<if>
+<branch type="IF" condition="'${type}' == 'numbers'">
+<kw name="Evaluate" owner="BuiltIn">
+<var>${phone}</var>
+<arg>str(random.randint(100000, 999999999))</arg>
+<arg>random</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="NOT RUN" start="2025-08-08T00:22:58.373489" elapsed="0.000424"/>
+</kw>
+<status status="NOT RUN" start="2025-08-08T00:22:58.372832" elapsed="0.001294"/>
+</branch>
+<branch type="ELSE">
+<kw name="Evaluate" owner="BuiltIn">
+<var>${phone}</var>
+<arg>''.join(random.choices(string.ascii_letters, k=100))</arg>
+<arg>random</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="NOT RUN" start="2025-08-08T00:22:58.374855" elapsed="0.000294"/>
+</kw>
+<status status="NOT RUN" start="2025-08-08T00:22:58.374255" elapsed="0.001054"/>
+</branch>
+<status status="NOT RUN" start="2025-08-08T00:22:58.372768" elapsed="0.002638"/>
+</if>
+<kw name="Fill Text" owner="Browser">
+<arg>${phone_field}</arg>
+<arg>${phone}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="NOT RUN" start="2025-08-08T00:22:58.375658" elapsed="0.000262"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>Filled password with: ${phone}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2025-08-08T00:22:58.376221" elapsed="0.000281"/>
+</kw>
+<status status="NOT RUN" start="2025-08-08T00:22:58.370419" elapsed="0.006209"/>
+</branch>
+<branch type="ELSE">
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-08-08T00:22:58.378180" level="INFO">Skipping phone field this time</msg>
+<arg>Skipping phone field this time</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-08-08T00:22:58.377247" elapsed="0.001113"/>
+</kw>
+<status status="PASS" start="2025-08-08T00:22:58.376737" elapsed="0.001837"/>
+</branch>
+<status status="PASS" start="2025-08-08T00:22:58.370340" elapsed="0.008337"/>
+</if>
 <kw name="Wait For Elements State" owner="Browser">
-<msg time="2025-08-07T01:44:29.685786" level="INFO">Waited for Element with selector id=frm-registrationForm-approvedTerms at state visible</msg>
+<msg time="2025-08-08T00:22:58.396356" level="INFO">Waited for Element with selector id=frm-registrationForm-approvedTerms at state visible</msg>
 <arg>id=frm-registrationForm-approvedTerms</arg>
 <tag>PageContent</tag>
 <tag>Wait</tag>
 <doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<status status="PASS" start="2025-08-07T01:44:29.682355" elapsed="0.004438"/>
+<status status="PASS" start="2025-08-08T00:22:58.386455" elapsed="0.010319"/>
 </kw>
-<kw name="Click" owner="Browser">
-<msg time="2025-08-07T01:44:29.686793" level="INFO">Clicks the element 'id=frm-registrationForm-approvedTerms'.</msg>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2025-08-08T00:22:58.398087" level="INFO">${box_service} = False</msg>
+<var>${box_service}</var>
+<arg>random.choice([True, False])</arg>
+<arg>random</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2025-08-08T00:22:58.397344" elapsed="0.000797"/>
+</kw>
+<if>
+<branch type="IF" condition="${box_service} == 'True'">
+<kw name="Check Checkbox" owner="Browser">
 <arg>id=frm-registrationForm-approvedTerms</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
-<doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" start="2025-08-07T01:44:29.686793" elapsed="0.047533"/>
+<doc>Checks the checkbox or selects radio button found by ``selector``.</doc>
+<status status="NOT RUN" start="2025-08-08T00:22:58.398919" elapsed="0.000148"/>
 </kw>
+<kw name="Log" owner="BuiltIn">
+<arg>The tickbox was ticked for service agreement</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2025-08-08T00:22:58.399239" elapsed="0.000129"/>
+</kw>
+<status status="NOT RUN" start="2025-08-08T00:22:58.398428" elapsed="0.001000"/>
+</branch>
+<branch type="ELSE">
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-08-08T00:22:58.399912" level="INFO">The tickbox was not tick for service agreement</msg>
+<arg>The tickbox was not tick for service agreement</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-08-08T00:22:58.399685" elapsed="0.000284"/>
+</kw>
+<status status="PASS" start="2025-08-08T00:22:58.399493" elapsed="0.000530"/>
+</branch>
+<status status="PASS" start="2025-08-08T00:22:58.398375" elapsed="0.001692"/>
+</if>
 <kw name="Wait For Elements State" owner="Browser">
-<msg time="2025-08-07T01:44:29.738863" level="INFO">Waited for Element with selector id=frm-registrationForm-otherOffers at state visible</msg>
+<msg time="2025-08-08T00:22:58.407953" level="INFO">Waited for Element with selector id=frm-registrationForm-otherOffers at state visible</msg>
 <arg>id=frm-registrationForm-otherOffers</arg>
 <tag>PageContent</tag>
 <tag>Wait</tag>
 <doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<status status="PASS" start="2025-08-07T01:44:29.734326" elapsed="0.004537"/>
+<status status="PASS" start="2025-08-08T00:22:58.400292" elapsed="0.007891"/>
 </kw>
-<kw name="Click" owner="Browser">
-<msg time="2025-08-07T01:44:29.739864" level="INFO">Clicks the element 'id=frm-registrationForm-otherOffers'.</msg>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2025-08-08T00:22:58.409198" level="INFO">${box_pad} = True</msg>
+<var>${box_pad}</var>
+<arg>random.choice([True, False])</arg>
+<arg>random</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2025-08-08T00:22:58.408650" elapsed="0.000585"/>
+</kw>
+<if>
+<branch type="IF" condition="${box_pad} == 'True'">
+<kw name="Check Checkbox" owner="Browser">
 <arg>id=frm-registrationForm-otherOffers</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
-<doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" start="2025-08-07T01:44:29.738863" elapsed="0.060636"/>
+<doc>Checks the checkbox or selects radio button found by ``selector``.</doc>
+<status status="NOT RUN" start="2025-08-08T00:22:58.409848" elapsed="0.000150"/>
 </kw>
+<kw name="Log" owner="BuiltIn">
+<arg>The tickbox was ticked for service agreement</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2025-08-08T00:22:58.410158" elapsed="0.000124"/>
+</kw>
+<status status="NOT RUN" start="2025-08-08T00:22:58.409458" elapsed="0.000883"/>
+</branch>
+<branch type="ELSE">
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-08-08T00:22:58.412401" level="INFO">The tickbox was not tick for service agreement</msg>
+<arg>The tickbox was not tick for service agreement</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-08-08T00:22:58.410782" elapsed="0.001814"/>
+</kw>
+<status status="PASS" start="2025-08-08T00:22:58.410394" elapsed="0.002371"/>
+</branch>
+<status status="PASS" start="2025-08-08T00:22:58.409423" elapsed="0.003538"/>
+</if>
 <kw name="Wait For Elements State" owner="Browser">
-<msg time="2025-08-07T01:44:29.807578" level="INFO">Waited for Element with selector id=frm-registrationForm-submit at state visible</msg>
+<msg time="2025-08-08T00:22:58.426315" level="INFO">Waited for Element with selector id=frm-registrationForm-submit at state visible</msg>
 <arg>id=frm-registrationForm-submit</arg>
 <tag>PageContent</tag>
 <tag>Wait</tag>
 <doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<status status="PASS" start="2025-08-07T01:44:29.800513" elapsed="0.007065"/>
+<status status="PASS" start="2025-08-08T00:22:58.419847" elapsed="0.006649"/>
 </kw>
 <kw name="Click" owner="Browser">
-<msg time="2025-08-07T01:44:29.808606" level="INFO">Clicks the element 'id=frm-registrationForm-submit'.</msg>
+<msg time="2025-08-08T00:22:58.428445" level="INFO">Clicks the element 'id=frm-registrationForm-submit'.</msg>
 <arg>id=frm-registrationForm-submit</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" start="2025-08-07T01:44:29.808606" elapsed="0.564807"/>
+<status status="PASS" start="2025-08-08T00:22:58.427092" elapsed="0.609589"/>
 </kw>
-<msg time="2025-08-07T01:44:30.386342" level="INFO">Switching context to context=64cf6e2b-f318-44ea-bcb7-8b6782940d9b in CURRENT</msg>
-<msg time="2025-08-07T01:44:30.390336" level="INFO">Successfully changed active context: context=64cf6e2b-f318-44ea-bcb7-8b6782940d9b</msg>
-<msg time="2025-08-07T01:44:30.441591" level="INFO">Successfully closed Context</msg>
-<status status="PASS" start="2025-08-07T01:44:17.032534" elapsed="13.340879"/>
+<kw name="Get Elements" owner="Browser">
+<msg time="2025-08-08T00:22:59.637856" level="INFO">Found locator('div.alert.alert-danger').first(),locator('div.alert.alert-danger').nth(1),locator('div.alert.alert-danger').nth(2),locator('div.alert.alert-danger').nth(3),locator('div.alert.alert-danger').nth(4) Locators successfully.</msg>
+<msg time="2025-08-08T00:22:59.638110" level="INFO">${errors} = ['css=div.alert.alert-danger &gt;&gt; nth=0', 'css=div.alert.alert-danger &gt;&gt; nth=1', 'css=div.alert.alert-danger &gt;&gt; nth=2', 'css=div.alert.alert-danger &gt;&gt; nth=3', 'css=div.alert.alert-danger &gt;&gt; nth=4']</msg>
+<var>${errors}</var>
+<arg>css=div.alert.alert-danger</arg>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns a reference to Playwright [https://playwright.dev/docs/api/class-locator|Locator]
+for all matched elements by ``selector``.</doc>
+<status status="PASS" start="2025-08-08T00:22:59.037338" elapsed="0.600807"/>
+</kw>
+<kw name="Should Not Be Empty" owner="BuiltIn">
+<msg time="2025-08-08T00:22:59.638902" level="INFO">Length is 5.</msg>
+<arg>${errors}</arg>
+<arg>No errors found</arg>
+<doc>Verifies that the given item is not empty.</doc>
+<status status="PASS" start="2025-08-08T00:22:59.638501" elapsed="0.000454"/>
+</kw>
+<kw name="Get Length" owner="BuiltIn">
+<msg time="2025-08-08T00:22:59.639458" level="INFO">Length is 5.</msg>
+<msg time="2025-08-08T00:22:59.639546" level="INFO">${error_count} = 5</msg>
+<var>${error_count}</var>
+<arg>${errors}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<status status="PASS" start="2025-08-08T00:22:59.639232" elapsed="0.000342"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-08-08T00:22:59.640103" level="INFO">Found 5 error/s messages.</msg>
+<arg>Found ${error_count} error/s messages.</arg>
+<arg>console=True</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-08-08T00:22:59.639834" elapsed="0.000468"/>
+</kw>
+<for flavor="IN">
+<iter>
+<kw name="Get Text" owner="Browser">
+<msg time="2025-08-08T00:22:59.677629" level="INFO">Text: 'Zadejte své celé jméno.'</msg>
+<msg time="2025-08-08T00:22:59.677891" level="INFO">${text} = Zadejte své celé jméno.</msg>
+<var>${text}</var>
+<arg>${err}</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2025-08-08T00:22:59.641036" elapsed="0.036951"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Error message: ${text}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-08-08T00:22:59.678239" elapsed="0.001611"/>
+</kw>
+<var name="${err}">css=div.alert.alert-danger &gt;&gt; nth=0</var>
+<status status="PASS" start="2025-08-08T00:22:59.640850" elapsed="0.039726"/>
+</iter>
+<iter>
+<kw name="Get Text" owner="Browser">
+<msg time="2025-08-08T00:22:59.793574" level="INFO">Text: '"E-mail" není platná e-mailová adresa'</msg>
+<msg time="2025-08-08T00:22:59.793757" level="INFO">${text} = "E-mail" není platná e-mailová adresa</msg>
+<var>${text}</var>
+<arg>${err}</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2025-08-08T00:22:59.681893" elapsed="0.111926"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Error message: ${text}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-08-08T00:22:59.794106" elapsed="0.000965"/>
+</kw>
+<var name="${err}">css=div.alert.alert-danger &gt;&gt; nth=1</var>
+<status status="PASS" start="2025-08-08T00:22:59.681220" elapsed="0.114109"/>
+</iter>
+<iter>
+<kw name="Get Text" owner="Browser">
+<msg time="2025-08-08T00:22:59.872390" level="INFO">Text: 'Zadejte své heslo.'</msg>
+<msg time="2025-08-08T00:22:59.872571" level="INFO">${text} = Zadejte své heslo.</msg>
+<var>${text}</var>
+<arg>${err}</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2025-08-08T00:22:59.796263" elapsed="0.076348"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Error message: ${text}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-08-08T00:22:59.872828" elapsed="0.000606"/>
+</kw>
+<var name="${err}">css=div.alert.alert-danger &gt;&gt; nth=2</var>
+<status status="PASS" start="2025-08-08T00:22:59.795744" elapsed="0.077836"/>
+</iter>
+<iter>
+<kw name="Get Text" owner="Browser">
+<msg time="2025-08-08T00:22:59.893637" level="INFO">Text: 'Prosím zadejte své heslo znovu.'</msg>
+<msg time="2025-08-08T00:22:59.893860" level="INFO">${text} = Prosím zadejte své heslo znovu.</msg>
+<var>${text}</var>
+<arg>${err}</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2025-08-08T00:22:59.874108" elapsed="0.019837"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Error message: ${text}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-08-08T00:22:59.894238" elapsed="0.001178"/>
+</kw>
+<var name="${err}">css=div.alert.alert-danger &gt;&gt; nth=3</var>
+<status status="PASS" start="2025-08-08T00:22:59.873783" elapsed="0.021845"/>
+</iter>
+<iter>
+<kw name="Get Text" owner="Browser">
+<msg time="2025-08-08T00:22:59.915149" level="INFO">Text: 'Potvrďte prosím svůj souhlas s licenčními podmínkami.'</msg>
+<msg time="2025-08-08T00:22:59.915339" level="INFO">${text} = Potvrďte prosím svůj souhlas s licenčními podmínkami.</msg>
+<var>${text}</var>
+<arg>${err}</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2025-08-08T00:22:59.896822" elapsed="0.018564"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Error message: ${text}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-08-08T00:22:59.915609" elapsed="0.000801"/>
+</kw>
+<var name="${err}">css=div.alert.alert-danger &gt;&gt; nth=4</var>
+<status status="PASS" start="2025-08-08T00:22:59.896041" elapsed="0.020526"/>
+</iter>
+<var>${err}</var>
+<value>@{errors}</value>
+<status status="PASS" start="2025-08-08T00:22:59.640546" elapsed="0.276167"/>
+</for>
+<msg time="2025-08-08T00:22:59.937921" level="INFO">Switching context to context=62e1703d-fda9-4b7a-b595-ea90efd6dea5 in CURRENT</msg>
+<msg time="2025-08-08T00:22:59.947038" level="INFO">Successfully changed active context: context=62e1703d-fda9-4b7a-b595-ea90efd6dea5</msg>
+<msg time="2025-08-08T00:23:00.054674" level="INFO">Successfully closed Context</msg>
+<status status="PASS" start="2025-08-08T00:22:49.455603" elapsed="10.461547"/>
 </test>
-<status status="PASS" start="2025-08-07T01:44:16.899591" elapsed="13.544204"/>
+<status status="PASS" start="2025-08-08T00:22:49.116168" elapsed="10.959076"/>
 </suite>
 <statistics>
 <total>
